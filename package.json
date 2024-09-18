@@ -1,13 +1,13 @@
 {
-  "name": "vscode-procurve-syntax",
-  "displayName": "HP Procurve Config Syntax",
-  "description": "Syntax highlighting for HP/Aruba Procurve switch configurations",
+  "name": "vscode-comware-syntax",
+  "displayName": "HPE/H3C Comware Config Syntax",
+  "description": "Syntax highlighting for HPE/H3C Comware switch configurations",
   "icon": "icon.png",
-  "version": "1.1.1",
-  "publisher": "andytruett",
+  "version": "0.1",
+  "publisher": "vilimf",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andytruett/vscode-procurve-syntax.git"
+    "url": "https://github.com/vilimf/vscode-comware-syntax.git"
   },
   "engines": {
     "vscode": "^1.24.0"
@@ -18,15 +18,16 @@
   "contributes": {
     "languages": [
       {
-        "id": "hp",
+        "id": "hpe",
         "aliases": [
-          "HP Procurve",
-          "hp"
+          "HPE comware",
+          "hpe",
+          "h3c"
         ],
         "extensions": [
           ".config",
-          ".pcc",
-          ".aos"
+          ".comware",
+          ".cfg"
         ],
         "configuration": "./language-configuration.json"
       }
@@ -34,8 +35,8 @@
     "grammars": [
       {
         "language": "hp",
-        "scopeName": "text.procurve",
-        "path": "./syntaxes/hp.tmLanguage.json"
+        "scopeName": "text.comware",
+        "path": "./syntaxes/hpe.tmLanguage.json"
       }
     ]
   }
